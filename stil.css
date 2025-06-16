@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #1a2a40; /* tamna plava */
+  line-height: 1.7;
+  text-align: center;
+  
+  background-image: url("fotografije/pozadina.jpg"); /* Ovdje ubaci svoju pozadinsku sliku */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  
+  background-color: #e6f0fa; /* fallback boja */
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Naslovi */
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #12345a;
+  border-bottom: 3px solid #abc7e1;
+  padding-bottom: 12px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #234f7a;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #34688c;
+}
+
+/* Paragrafi u manjim blokovima */
+p {
+  font-size: 1.1em;
+  color: #1a2a40;
+  background-color: rgba(235, 245, 255, 0.9);
+  padding: 15px 20px;
+  margin: 20px auto;  /* centriraj svaki paragraf */
+  border-left: 6px solid #8fb9db;
+  border-radius: 8px;
+  max-width: 600px;   /* ograniči širinu na 600px */
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .wrapper {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    max-width: 90%; /* na manjim ekranima širi blok */
+    font-size: 1em;
+  }
+}
+.main-nav ul {
+  list-style: none;       /* makni točkice sa liste */
+  padding: 0;
+  margin: 0;
+  display: flex;          /* horizontalno poravnanje */
+  justify-content: center; /* centriraj linkove */
+  background-color: #12345a; /* tamnoplava pozadina navigacije */
+  border-radius: 8px;
+}
+
+.main-nav li {
+  margin: 0 20px;        /* razmak između linkova */
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  padding: 12px 18px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background-color: #abc7e1; /* svijetloplava pri hoveru */
+  color: #12345a;
+}
+
+
