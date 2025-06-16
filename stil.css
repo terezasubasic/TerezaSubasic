@@ -10,7 +10,7 @@ body {
   line-height: 1.7;
   text-align: center;
   
-  background-image: url("pozadina.jpg"); /* Ovdje ubaci svoju pozadinsku sliku */
+  background-image: url(pozadina.jpg); /* Ovdje ubaci svoju pozadinsku sliku */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
